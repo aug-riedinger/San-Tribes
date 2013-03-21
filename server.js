@@ -1,5 +1,5 @@
 var express = require('express');
-var MemcachedStore = require('connect-memcached')(express);
+// var MemcachedStore = require('connect-memcached')(express);
 
 var passport = require('passport');
 var FacebookStrategy = require('passport-facebook').Strategy;
