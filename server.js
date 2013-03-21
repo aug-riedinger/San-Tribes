@@ -1,5 +1,5 @@
 var express = require('express');
-// var MemcachedStore = require('connect-memcached')(express);
+var MemcachedStore = require('connect-memcached')(express);
 
 var passport = require('passport');
 var FacebookStrategy = require('passport-facebook').Strategy;
@@ -21,7 +21,7 @@ app.configure(function() {
 	app.use(express.bodyParser());
 	app.use(express.session({
 		secret: 'test genial'
-		// store: new MemcachedStore
+		store: new MemcachedStore
 		// store: new mongoStore({
 		// 	url: 'mongodb://localhost/san-tribes',
 		// 	collection: 'sessions'

@@ -1,6 +1,8 @@
 {
   "name": "San-Tribes",
   "version": "0.0.1",
+  "description": "Tools for Coworking at home communities",
+  "author": "Augustin Riedinger - augustin.riedinger (at) gmail (dot) com",
   "dependencies": {},
   "engines": {
     "node": "0.8.x",
@@ -10,6 +12,7 @@
     "express": "~3.1.0",
     "passport": "~0.1.16",
     "passport-facebook": "~0.1.5",
-    "mongoose": "~3.5.7"
+    "mongoose": "~3.5.7",
+    "connect-memcached": "~0.0.3"
   }
 }
