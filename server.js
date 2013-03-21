@@ -118,8 +118,8 @@ app.get('/logout', function(req, res) {
 // 	res.end('<script src="//connect.facebook.net/en_US/all.js"></script>');
 // });
 
-app.listen(9000, function() {
-	console.log('Listening on port 9000');
+app.listen(8902, function() {
+	console.log('Listening on port 8902');
 });
 
 function ensureAuthenticatedJSON(req, res, next) {
