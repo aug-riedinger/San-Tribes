@@ -1,5 +1,21 @@
 /* app css stylesheet */
 
+body {
+  padding-top: 10px;
+  background: url('../img/paper_fibers.png');
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+a {
+  cursor: pointer;
+}
+
+header {
+  font-family: 'Snowburst One', cursive;
+  height: 50px;
+}
+/*
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -27,4 +43,45 @@
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
+}*/
+
+.navbar .nav > li > .menu-no-padding {
+  padding: 0;
+}
+
+.login {
+  height: 50px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.login .logout {
+  position: absolute;
+  right: -3px;
+  bottom: -22px;
+}
+
+.login > a > img {
+  margin-left: 5px; 
+}
+
+
+.map {
+  height: 400px;
+  width: 600px;
+}
+
+img.thumb {
+  max-width: 50px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+}
+
+.next-dates {
+  margin: 0;
+}
+
+.next-dates > li {
+  text-align: center;
 }

@@ -1,0 +1,35 @@
+[
+	{
+		"id": 1,
+		"type": "news",
+		"url" : "http://mgcrea.github.com/angular-strap/",
+		"short": "Wahou a new link",
+		"thumb": "http://external.ak.fbcdn.net/safe_image.php?d=AQB7nNN8eM64HIn-&url=http%3A%2F%2Fmgcrea.github.com%2Fangular-strap%2Fimg%2Fsnippet.jpg",
+		"user": {
+			"name": "Augustin Riedinger",
+			"gravatar": "bc22b26eca68dab55ec4fe491495951e"
+		}
+	},
+	{
+		"id": 2,
+		"type": "news",
+		"url" : "http://mgcrea.github.com/angular-strap/",
+		"short": "Wahou a new link",
+		"thumb": "http://external.ak.fbcdn.net/safe_image.php?d=AQB7nNN8eM64HIn-&url=http%3A%2F%2Fmgcrea.github.com%2Fangular-strap%2Fimg%2Fsnippet.jpg",
+		"user": {
+			"name": "Augustin Riedinger",
+			"gravatar": "bc22b26eca68dab55ec4fe491495951e"
+		}
+	},
+	{
+		"id": 3,
+		"type": "news",
+		"url" : "http://mgcrea.github.com/angular-strap/",
+		"short": "Wahou a new link",
+		"thumb": "http://external.ak.fbcdn.net/safe_image.php?d=AQB7nNN8eM64HIn-&url=http%3A%2F%2Fmgcrea.github.com%2Fangular-strap%2Fimg%2Fsnippet.jpg",
+		"user": {
+			"name": "Augustin Riedinger",
+			"gravatar": "bc22b26eca68dab55ec4fe491495951e"
+		}
+	}
+]

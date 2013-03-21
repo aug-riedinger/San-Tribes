@@ -1,0 +1,13 @@
+<div class="well">
+<h2>News</h2>
+
+<ul>
+	<li ng-show="!posts.length" ng-click="test()">No Posts</li>
+	<li ng-repeat="post in posts">
+		<img ng-src="{{post.thumb}}" class="thumb" />
+		<a href="{{post.url}}" target="_blank">{{post.url}}</a> : {{post.short}}
+		<br />
+		by {{post.user.name}} <img ng-src="http://www.gravatar.com/avatar/{{post.user.gravatar}}?s=40" />
+	</li>
+</ul>
+</div>

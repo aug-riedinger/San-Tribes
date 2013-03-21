@@ -1,10 +1,34 @@
 'use strict';
-
+/*global angular*/
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives']).
-  config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: MyCtrl1});
-    $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: MyCtrl2});
-    $routeProvider.otherwise({redirectTo: '/view1'});
-  }]);
+var app = angular.module('myApp', ['$strap.directives', 'ui','myApp.controllers', 'myApp.filters', 'myApp.services', 'myApp.directives'])
+	.config(['$routeProvider', function($routeProvider) {
+	$routeProvider.when('/', {
+		templateUrl: 'partials/home.html',
+		controller: 'homeCtrl'
+	});
+	$routeProvider.when('/profile', {
+		templateUrl: 'partials/profile.html',
+		controller: 'profileCtrl'
+	});
+	$routeProvider.when('/calendar', {
+		templateUrl: 'partials/calendar.html',
+		controller: 'calendarCtrl'
+	});
+	$routeProvider.when('/schedule', {
+		templateUrl: 'partials/schedule.html',
+		controller: 'scheduleCtrl'
+	});
+	$routeProvider.when('/map', {
+		templateUrl: 'partials/map.html',
+		controller: 'mapCtrl'
+	});
+	$routeProvider.when('/people', {
+		templateUrl: 'partials/people.html',
+		controller: 'peopleCtrl'
+	});
+	$routeProvider.otherwise({
+		redirectTo: '/'
+	});
+}]);

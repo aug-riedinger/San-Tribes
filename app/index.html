@@ -1,28 +1,58 @@
 <!doctype html>
 <html lang="en" ng-app="myApp">
 <head>
-  <meta charset="utf-8">
-  <title>My AngularJS App</title>
-  <link rel="stylesheet" href="css/app.css"/>
+	<meta charset="utf-8">
+	<meta name="fragment" content="!" />
+	<title>San Tribes</title>
+	<link href='http://fonts.googleapis.com/css?family=Snowburst+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="lib/fullcalendar/fullcalendar.css" type='text/css' />
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" type='text/css' />
+	<link rel="stylesheet" href="lib/angular-ui/angular-ui.css" type='text/css' />
+	<!-- <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.css"/> -->
+	<link rel="stylesheet" href="css/app.css"/>
+
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+	<div id="fb-root"></div>
+	<header class="navbar" bs-navbar>
+		<div class="navbar-inner">
+			<!-- <div class="container"> -->
+			<a class="brand" href="#">San Tribes</a>
+			<ul class="nav">
+				<li data-match-route="/"><a href="#/"><i class="icon-home"></i> Home</a></li>
+				<li data-match-route="/schedule.*"><a href="#/schedule"><i class="icon-calendar"></i> Schedule</a></li>
+				<li data-match-route="/map.*"><a href="#/map"><i class="icon-map-marker"></i> Map</a></li>
+				<li data-match-route="/people.*"><a href="#/people"><i class="icon-user"></i> People</a></li>
+			</ul>
+			<login></login>
+			<!-- </div> -->
+		</div>
+	</header>
+	<div ng-controller="loadingCtrl">
+		<p ng-show="isViewLoading" class="alert"> Loading ... </p>
+	</div>
+	<p ng-show="!user.id" class="alert">Please Connect to get Data <a class="close">&times;</a></p>
 
-  <div ng-view></div>
+	<div class="row-fluid" ng-view>
+	</div>
 
-  <div>Angular seed app: v<span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
-  -->
-  <script src="lib/angular/angular.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
+-->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_fTZN29ZybGyp30jLSFVonI4EQbq898o&sensor=true"></script>
+<script src="lib/jquery/jquery-1.9.1.js"></script>
+<script src="lib/jquery/jquery-ui-1.10.1.custom.js"></script>
+<script src="lib/fullcalendar/fullcalendar.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-resource.js"></script>
+<script src="lib/angular/angular-cookies.js"></script>
+<script src="lib/angular/angular-strap.js"></script>
+<script src="lib/angular-ui/angular-ui.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/directives.js"></script>
 </body>
 </html>
